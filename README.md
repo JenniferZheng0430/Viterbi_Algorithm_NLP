@@ -12,7 +12,6 @@ Training file consists both words and identified POS tags. Each line consists of
 Test File only consist the words whose POS tags need to be predicted. We need to implement the Viterbi Model trained from the Test File to predict the POS Tags for the test file.
 
 ## Viterbi Algorithm Implementation Logic:
-The logic to implement the Viterbi Algorithm follows the below steps.
 a. Construct the emission hash table and transition hash table used to calculate emission & transmission probability
 b. Used transition hash table to construct transmission matrix that stores the probability of one tag followed by another tag
 c. Construct Viterbi Algorithm function to calculate the probability for each tag being the authentic tag of each word. Take the maximum probability out, and the matched tag for this probability is our predicted tag for this word.
